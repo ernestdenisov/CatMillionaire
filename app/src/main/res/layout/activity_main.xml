@@ -1,0 +1,276 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="success"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/textViewAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="amount"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/textViewTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="total"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="Поймать мышь"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textViewPerclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="perclick"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textViewPersec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="persec"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ua.com.ernestdenisov.catmillionaire.ButtonStrokeText
+                    android:id="@+id/button1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="New Button"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:textStrokeColor="#FFFFFF"
+                    app:textStrokeWidth="5dp"
+                    android:background="@drawable/mousecatch" />
+
+                <ua.com.ernestdenisov.catmillionaire.ButtonStrokeText
+                    android:id="@+id/button2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="New Button"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:textStrokeColor="#FFFFFF"
+                    app:textStrokeWidth="5dp"
+                    android:background="@drawable/catfriend" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ua.com.ernestdenisov.catmillionaire.ButtonStrokeText
+                    android:id="@+id/button3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="New Button"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:textStrokeColor="#FFFFFF"
+                    app:textStrokeWidth="5dp"
+                    android:background="@drawable/cheese" />
+
+                <ua.com.ernestdenisov.catmillionaire.ButtonStrokeText
+                    android:id="@+id/button4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="New Button"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:textStrokeColor="#FFFFFF"
+                    app:textStrokeWidth="5dp"
+                    android:background="@drawable/food" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ua.com.ernestdenisov.catmillionaire.ButtonStrokeText
+                    android:id="@+id/button5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="New Button"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:textStrokeColor="#FFFFFF"
+                    app:textStrokeWidth="5dp"
+                    android:background="@drawable/sausage" />
+
+                <ua.com.ernestdenisov.catmillionaire.ButtonStrokeText
+                    android:id="@+id/button6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="New Button"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:textStrokeColor="#FFFFFF"
+                    app:textStrokeWidth="5dp"
+                    android:background="@drawable/housesmall" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ua.com.ernestdenisov.catmillionaire.ButtonStrokeText
+                    android:id="@+id/button7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="New Button"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:textStrokeColor="#FFFFFF"
+                    app:textStrokeWidth="5dp"
+                    android:background="@drawable/catwife" />
+
+                <ua.com.ernestdenisov.catmillionaire.ButtonStrokeText
+                    android:id="@+id/button8"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="New Button"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:textStrokeColor="#FFFFFF"
+                    app:textStrokeWidth="5dp"
+                    android:background="@drawable/kittytransp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ua.com.ernestdenisov.catmillionaire.ButtonStrokeText
+                    android:id="@+id/button9"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="New Button"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:textStrokeColor="#FFFFFF"
+                    app:textStrokeWidth="5dp"
+                    android:background="@drawable/bank" />
+
+                <ua.com.ernestdenisov.catmillionaire.ButtonStrokeText
+                    android:id="@+id/button10"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="New Button"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    app:textStrokeColor="#FFFFFF"
+                    app:textStrokeWidth="5dp"
+                    android:background="@drawable/bighousetransp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
